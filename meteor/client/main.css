@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #01b65b 100%);
+  background-attachment: fixed;
+}
+
+.topbar {
+  display: flex; 
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #eee solid 3px;
+
+  background-color: #ffffff;
+}
+
+h1.title {
+  padding-left: 50px;
+}
+
+h2.sectionTitle {
+  text-align: center;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.collectionSide {
+  width: 50%;
+  
+  margin: 10px;
+  padding: 10px;
+}
+
+.gameSide {
+  width: 50%;
+  
+  margin: 10px;
+  padding: 10px;
+}
+
+.accountButton {
+  padding-left: 10px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: #000000 solid 1px;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: row;
+}
+
+li .delete {
+  background: none;
+  border: none;
+  flex: 1 1 0;
+}
+
+li .changeName .save {
+  flex: 2 1 0;
+}
+
+li .colName {
+  flex: 5 1 auto;
+  text-align: center;
+}
+
+li .openCollection {
+  flex: 2 1 0;
+}
+
+.colListHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colListHeader button {
+  margin-left: 10px;
+}
+
+.colName {
+  background: none;
+  border: 0;
+}
+
+
+
