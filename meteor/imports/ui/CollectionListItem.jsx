@@ -62,11 +62,6 @@ const CollectionListItem = ({collection, openClick}) => {
                     />
                 </>
             }
-            
-            
-            <button className="openCollection" onClick={openClick}>
-                Do Nothing
-            </button>
         </li>
     );
 }

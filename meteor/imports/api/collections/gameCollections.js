@@ -9,7 +9,7 @@ export const GameCollections = new Mongo.Collection('gameCollections');
 // //TODO: MAKE A SCHEMA - might not get to it :(
 if(Meteor.isServer){
     Meteor.publish('gameCollections', function colPublication() {
-        return GameCollections.find({ owner: Meteor.userId()});
+        return GameCollections.find({ ownerID: Meteor.userId()});
     });
 
     // doing this for demonstration purposes only - definitely terrible security
@@ -28,7 +28,8 @@ Meteor.methods({
         }
 
         GameCollections.insert({
-            owner: Meteor.userId(),
+            ownerID: Meteor.userId(),
+            ownerName: Meteor.user().username,
             name,
         });
 

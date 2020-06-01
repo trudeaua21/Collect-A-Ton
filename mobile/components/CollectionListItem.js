@@ -13,7 +13,7 @@ const CollectionListItem = props => {
       <ListItem
         key={props.collection._id}
         title={props.collection.name}
-        subtitle={'Owner: ' + props.collection.owner}
+        subtitle={'Owner: ' + props.collection.ownerName}
         onPress={deleteThisCollection}
         bottomDivider
       />

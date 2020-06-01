@@ -26,9 +26,7 @@ const PageContent = (props) => {
 
     return(
         <div className="pageContent" >
-            {/* Left side is intended to show the user's collections
-            */}
-            
+            {/* Shows users collections */}
             <div className="collectionSide">
                 { props.currentUser ?
                     <>  
@@ -44,10 +42,6 @@ const PageContent = (props) => {
                     </>
                     : <h2 className="sectionTitle">Sign in to continue</h2>
                 }
-            </div>
-            {/* Right side is intended to show the games in a selected collection*/}
-            <div className="gameSide">
-                <h2 className="sectionTitle">Content Would Have Gone Here</h2>
             </div>
         </div>
     );

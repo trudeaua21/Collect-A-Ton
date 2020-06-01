@@ -29,10 +29,11 @@ h2.sectionTitle {
 .pageContent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .collectionSide {
-  width: 50%;
+  width: 100%;
   
   margin: 10px;
   padding: 10px;
@@ -61,15 +62,15 @@ li {
 li .delete {
   background: none;
   border: none;
-  flex: 1 1 0;
+  flex: 1;
 }
 
 li .changeName .save {
-  flex: 2 1 0;
+  flex: 4;
 }
 
 li .colName {
-  flex: 5 1 auto;
+  flex: 10;
   text-align: center;
 }
 
